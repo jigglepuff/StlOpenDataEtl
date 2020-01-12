@@ -9,4 +9,4 @@ requirements = subprocess.Popen(
     ['pip', 'install', '-r', 'requirements.txt'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 stdout, stderr = requirements.communicate()
-print(stdout)
+print(stdout.decode('utf-8'))
