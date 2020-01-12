@@ -1,5 +1,7 @@
 # StlOpenDataEtl
 
+_Author_: @nicseltzer
+
 _Status_: Planning
 
 ## Description
@@ -11,6 +13,7 @@ This project aims to be the jumping off point for the OpenSTL Extract, Transform
 ### Fetcher
 
 _Author_: @nicseltzer
+
 _Status_: Under Development
 
 This script is run at a configurable interval and is responsible for fetching data from configured remote sources.
@@ -18,16 +21,19 @@ This script is run at a configurable interval and is responsible for fetching da
 ### Extractor
 
 _Author_: Looking for owner
+
 _Status_: Unstarted
 
 ### Transformer
 
 _Author_: Looking for owner
+
 _Status_: Unstarted
 
 ### Loader
 
 _Author_: Looking for owner
+
 _Status_: Unstarted
 
 ## Remote Data Sources
