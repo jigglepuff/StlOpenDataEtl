@@ -8,6 +8,41 @@ _Status_: Planning
 
 This project aims to be the jumping off point for the OpenSTL Extract, Transform, and Load (ETL) pipeline.
 
+##  Developing
+
+The below notes assume that you've forked the repo to your account and have pulled down a clone of that fork.
+
+Note: This project has only been built on MacOS and Linux so far. Submit PRs with instructions on building / running in Windows (or whatever you use).
+
+### Get Python3
+
+If you don't have Python3 installed, you'll need to download it from the [Python website](https://www.python.org/downloads/) for your particular operating system.
+
+### Setup your Virtual Environment (venv)
+
+There are a lot of resources for doing this online, but I recommend the following (espeically if you're using VSCode):
+
+#### Virtual Environment
+
+1. From your locally cloned repo, run `python3 -m venv .venv`. This will create a .venv directory which contains all of the pieces for your local Python project.
+1. That's it. You've created a venv.
+
+
+#### Activating Virtual Environment
+
+1. Using the your favorite terminal or the terminal built-in to VSCode (which should pick up `.venv` automatically), run `source ./.venv/bin/activate`. This will do the magic of setting up your project in isolation from your global package manifest.
+1. Next, we need to get the dependencies for the project. You can do this by running `./make.py`. If you need to add dependencies, you can add them with `pip` as you normally would. Just make sure to run `./package.py` before committing back to the repo.
+
+#### Running The Application
+
+1. Run `python3 ./app.py`.
+
+
+#### Deactivating Virtual Environment
+
+1. Run `deactivate`.
+
+
 ## Components
 
 ### Fetcher
