@@ -20,7 +20,7 @@ If you don't have Python3 installed, you'll need to download it from the [Python
 
 ### Setup your Virtual Environment (venv)
 
-There are a lot of resources for doing this online, but I recommend the following (espeically if you're using VSCode):
+There are a lot of resources for doing this online, but I recommend the following (especically if you're using VSCode):
 
 #### Virtual Environment
 
