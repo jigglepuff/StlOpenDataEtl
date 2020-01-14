@@ -58,7 +58,7 @@ This script is run at a configurable interval and is responsible for fetching da
 
 _Author_: @nicseltzer
 
-_Status_: Under development
+_Status_: Alpha
 
 This module is responsible for classifying fetched binary data. The application will hand this data off to the Extractor module.
 
