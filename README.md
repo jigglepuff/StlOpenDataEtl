@@ -49,9 +49,18 @@ There are a lot of resources for doing this online, but I recommend the followin
 
 _Author_: @nicseltzer
 
-_Status_: Under Development
+_Status_: Alpha
+
 
 This script is run at a configurable interval and is responsible for fetching data from configured remote sources.
+
+### Parser / Classifier
+
+_Author_: @nicseltzer
+
+_Status_: Under development
+
+This module is responsible for classifying fetched binary data. The application will hand this data off to the Extractor module.
 
 ### Extractor
 
@@ -59,17 +68,23 @@ _Author_: Looking for owner
 
 _Status_: Unstarted
 
+This module is responsible for taking data of a given format and extracting it to an agreed upon, unifrom format
+
 ### Transformer
 
 _Author_: Looking for owner
 
 _Status_: Unstarted
 
+This module will mold the data into a usable state - pandas? Ah?
+
 ### Loader
 
 _Author_: Looking for owner
 
 _Status_: Unstarted
+
+This module is responsible for pushing the transformed data into a persistent datastore.
 
 ## Remote Data Sources
 

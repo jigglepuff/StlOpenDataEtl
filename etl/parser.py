@@ -1,4 +1,12 @@
-class Parser:
+from etl.utils import decompress, get_file_ext
+import zipfile
 
-    def parse(self, data):
-        pass
+
+class Parser:
+    def flatten(self, response, extensions=None):
+        for payload in response.payload:
+            if zipfile.is_zipfile(payload.data):
+                response.payload = decompress(
+                    payload.data, extensions)
+                self.flatten(response)
+        return response.payload
